@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Devices>
+    <Device Name="GraphicsCard" Origin="Taiwan">
+        <Price>1000</Price>
+        <Type>
+            <Is-Peripheral>yes</Is-Peripheral>
+            <Power-Consumption>250</Power-Consumption>
+            <Has-Cooler>yes</Has-Cooler>
+            <Group>multimedia</Group>
+            <Port>DVI-D</Port>
+            <Port>HDMI</Port>
+        </Type>
+        <Critical>false</Critical>
+    </Device>
+    <Device Name="RAM">
+        <Price>100</Price>
+        <Type>
+            <Is-Peripheral>false</Is-Peripheral>
+            <Power-Consumption>5</Power-Consumption>
+            <Has-Cooler>no</Has-Cooler>
+            <Group>core</Group>
+        </Type>
+        <Critical>true</Critical>
+    </Device>
+    <Device Origin="Malaysia" Name="CPU">
+        <Price>350</Price>
+        <Type>
+            <Is-Peripheral>no</Is-Peripheral>
+            <Power-Consumption>95</Power-Consumption>
+            <Has-Cooler>yes</Has-Cooler>
+            <Group>core</Group>
+        </Type>
+        <Critical>true</Critical>
+    </Device>
+    <Device Name="MB">
+        <Price>250</Price>
+        <Type>
+            <Is-Peripheral>no</Is-Peripheral>
+            <Power-Consumption>30</Power-Consumption>
+            <Has-Cooler>no</Has-Cooler>
+            <Group>core</Group>
+            <Port>DVI-D</Port>
+            <Port>HDMI</Port>
+            <Port>VGA</Port>
+            <Port>LPT</Port>
+            <Port>USB</Port>
+        </Type>
+        <Critical>true</Critical>
+    </Device>
+    <Device Name="MFP" Origin="USA">
+        <Price>100</Price>
+        <Type>
+            <Is-Peripheral>yes</Is-Peripheral>
+            <Power-Consumption>50</Power-Consumption>
+            <Has-Cooler>no</Has-Cooler>
+            <Group>io</Group>
+            <Port>LPT</Port>
+            <Port>USB</Port>
+        </Type>
+        <Critical>false</Critical>
+    </Device>
+    <Device Name="KB">
+        <Price>20</Price>
+        <Type>
+            <Is-Peripheral>yes</Is-Peripheral>
+            <Power-Consumption>3</Power-Consumption>
+            <Has-Cooler>no</Has-Cooler>
+            <Group>io</Group>
+        </Type>
+        <Critical>false</Critical>
+    </Device>
+    <Device Name="Mouse">
+        <Price>25</Price>
+        <Type>
+            <Is-Peripheral>yes</Is-Peripheral>
+            <Power-Consumption>2</Power-Consumption>
+            <Has-Cooler>no</Has-Cooler>
+            <Group>io</Group>
+        </Type>
+        <Critical>false</Critical>
+    </Device>
+    <Device Name="Monitor" Origin="Taiwan">
+        <Price>400</Price>
+        <Type>
+            <Is-Peripheral>yes</Is-Peripheral>
+            <Power-Consumption>40</Power-Consumption>
+            <Has-Cooler>no</Has-Cooler>
+            <Group>io</Group>
+        </Type>
+        <Critical>false</Critical>
+    </Device>
+    <Device Name="Monitor">
+        <Price>400</Price>
+        <Type>
+            <Is-Peripheral>yes</Is-Peripheral>
+            <Power-Consumption>40</Power-Consumption>
+            <Has-Cooler>no</Has-Cooler>
+            <Group>io</Group>
+        </Type>
+        <Critical>false</Critical>
+    </Device>
+    <Device Name="SSD" Origin="Taiwan">
+        <Price>120</Price>
+        <Type>
+            <Is-Peripheral>yes</Is-Peripheral>
+            <Power-Consumption>5</Power-Consumption>
+            <Has-Cooler>no</Has-Cooler>
+            <Group>storage</Group>
+        </Type>
+        <Critical>true</Critical>
+    </Device>
+    <Device Name="HDD">
+        <Price>80</Price>
+        <Type>
+            <Is-Peripheral>yes</Is-Peripheral>
+            <Power-Consumption>5</Power-Consumption>
+            <Has-Cooler>no</Has-Cooler>
+            <Group>storage</Group>
+        </Type>
+        <Critical>false</Critical>
+    </Device>
+    <Device Name="Case">
+        <Price>30</Price>
+        <Type>
+            <Is-Peripheral>no</Is-Peripheral>
+            <Power-Consumption>2</Power-Consumption>
+            <Has-Cooler>yes</Has-Cooler>
+            <Group>other</Group>
+        </Type>
+        <Critical>false</Critical>
+    </Device>
+    <Device Name="FDD">
+        <Price>5</Price>
+        <Type>
+            <Is-Peripheral>yes</Is-Peripheral>
+            <Power-Consumption>8</Power-Consumption>
+            <Has-Cooler>no</Has-Cooler>
+            <Group>storage</Group>
+        </Type>
+        <Critical>false</Critical>
+    </Device>
+</Devices>

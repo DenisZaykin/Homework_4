@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Devices" type="DevicesType"/>
+  <xs:complexType name="DevicesType">
+    <xs:sequence>
+      <xs:element type="DeviceType" name="Device" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DeviceType">
+        <xs:sequence>
+            <xs:element name="Price" maxOccurs="1" minOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:float">
+                            <xs:minExclusive value="1"/>
+                            <xs:maxExclusive value="1000"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element type="TypeType" name="Type" maxOccurs="1" minOccurs="0"/>
+            <xs:element type="xs:boolean" name="Critical" maxOccurs="1" minOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="Name" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:ID">
+                    <xs:pattern value="\\w+"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute type="OriginType" name="Origin" use="optional" default="China"/>
+  </xs:complexType>
+  <xs:complexType name="TypeType">
+    <xs:sequence>
+      <xs:element type="YesNoType" name="Is-Peripheral"/>
+      <xs:element type="xs:integer" name="Power-Consumption"/>
+      <xs:element type="YesNoType" name="Has-Cooler"/>
+      <xs:element name="Group">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="multimedia"/>
+            <xs:enumeration value="core"/>
+            <xs:enumeration value="io"/>
+            <xs:enumeration value="storage"/>
+            <xs:enumeration value="other"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Port" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="DVI-D"/>
+            <xs:enumeration value="HDMI"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="OriginType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Taiwan"/>
+            <xs:enumeration value="China"/>
+            <xs:enumeration value="Malaysia"/>
+            <xs:enumeration value="USA"/>
+            <xs:enumeration value="EU"/>
+        </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="YesNoType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="yes"/>
+            <xs:enumeration value="no"/>
+        </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
